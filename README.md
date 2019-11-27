@@ -2,10 +2,7 @@
 
 portable f# reverse shell (self-contained executable)
 
-**Requirements**
-
-Ubuntu 18.04 (works fine with kali 2019.4)
-https://www.mono-project.com/download/stable/#download-lin
+**Build**
 
 ```
 root@kali:/opt/fsrs# apt-get install fsharp
@@ -15,12 +12,10 @@ Reading state information... Done
 fsharp is already the newest version (4.5-0xamarin9+ubuntu1804b1).
 0 upgraded, 0 newly installed, 0 to remove and 156 not upgraded.
 ```
+Ubuntu 18.04 (works fine with kali 2019.4)
+- https://www.mono-project.com/download/stable/#download-lin
 
 **Usage**
-
-Edit listener IP/Domain, Port values in fsrs.fsx.
-
-Generate strong name key, compile to standalone .exe. 
 
 ```
 root@kali:/opt/fsrs# sn -k fsrs.snk
@@ -43,7 +38,11 @@ drwxr-xr-x 29 root root 4.0K Nov 27 02:56 ..
 -rw-------  1 root root  596 Nov 27 04:52 fsrs.snk
 ```
 
-Drop execute fsrs.exe on host for reverse shell.
+- Edit listener IP/Domain, Port values in fsrs.fsx.
+- Edit target binary for reverse shell in fsrs.fsx. 
+- Generate strong name key fsrs.snk
+- Compile fsrs.fsx to fsrs.exe (flags: standalone, keyfile, target platform) 
+- Drop and execute fsrs.exe on host for reverse shell.
 
 
 **AV**
