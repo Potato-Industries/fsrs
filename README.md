@@ -4,7 +4,7 @@ portable f# reverse shell (self-contained executable)
 
 **Requirements**
 
-Ubuntu 18.04, works fine with kali 2019.4
+Ubuntu 18.04 (works fine with kali 2019.4)
 https://www.mono-project.com/download/stable/#download-lin
 
 ```
