@@ -15,9 +15,9 @@ fsharp is already the newest version (4.5-0xamarin9+ubuntu1804b1).
 
 **Usage**
 
-Edit listener IP/Domain, Port
+Edit listener IP/Domain, Port values in fsrs.fsx.
 
-Compile
+Generate strong name key, compile to standalone .exe. 
 
 ```
 root@kali:/opt/fsrs# sn -k fsrs.snk
@@ -42,5 +42,12 @@ drwxr-xr-x 29 root root 4.0K Nov 27 02:56 ..
 
 Drop execute fsrs.exe on host for reverse shell.
 
+
 **AV**
 
+Not bad out of the box, source code will need obfuscation for further bypass.
+
+<img width="1307" alt="Screenshot 2019-11-27 at 04 57 39" src="https://user-images.githubusercontent.com/56988989/69695174-4a5d6500-10d3-11ea-8ec2-a13386a9b91e.png">
+
+
+Enjoy~
